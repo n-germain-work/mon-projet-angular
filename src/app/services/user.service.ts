@@ -7,7 +7,7 @@ import { User } from '../models/User.model';
 })
 export class UserService {
   private users: User[] = [];
-  userSubject = new Subject();
+  userSubject = new Subject<User[]>();
 
   constructor() {}
 
